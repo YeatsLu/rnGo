@@ -14,6 +14,8 @@ var formatTimer = function( v ) {
     return `${minutes}:${seconds}`
 }
 
+// TODO seek未缓存地方
+
 export default class VideoPlayer extends PureComponent {
     constructor(prop) {
         super(prop)
@@ -53,8 +55,6 @@ export default class VideoPlayer extends PureComponent {
     }
     _start = () => {
         // 点击播放
-        // seek(0), 触发progress, 可能当前操作是再次播放
-        this.video.seek(0)
         // 去掉播放遮罩，默认开启播放, 显示视频加载中,
         // 这时可能还没有onLoad, 而onLoad之后，再若干次onProgress之后，
         // onProgress中加载可播放的时间，直到onReadyForDisplay才算是加载完毕
@@ -89,7 +89,9 @@ export default class VideoPlayer extends PureComponent {
     }
     _onEnd = () => {
         // 视频播放结束
-        this.setState({ masked: true, paused: true, handled: false })
+        this.video.seek(0)
+        this.setState({ paused: true, handled: true })
+        this._hideHandlerWithTimer()
     }
     _onReadyForDisplay = () => {
         // 这里才开始真正的播放进程中，即视频计时器开始计时
@@ -148,7 +150,7 @@ export default class VideoPlayer extends PureComponent {
     _renderMask() {
         return (
             <TouchableOpacity onPress={ this._start } style={ SS.mask }>
-                <Icon name="play-circle-filled" size={ CT.playIconSize } style={ SS.maskIcon }/>
+                <Icon name="play-circle-filled" size={ CT.playIconSize }/>
             </TouchableOpacity>
         )
     }
@@ -161,6 +163,7 @@ export default class VideoPlayer extends PureComponent {
                 <Video
                     ref={ v => this.video = v }
                     resizeMode="contain"
+                    // progressUpdateInterval={}
                     source={ source }
                     style={ size }
                     paused={ paused }
@@ -216,7 +219,6 @@ const SS = StyleSheet.create({
         position: 'absolute', top: 0, right: 0, bottom: 0, left: 0,
         justifyContent: 'center', alignItems: 'center', backgroundColor: 'transparent'
     },
-    maskIcon: { opacity: 0.7 },
 
     time: { fontSize: rem(24), color: '#fff', marginHorizontal: rem(10) }
 })

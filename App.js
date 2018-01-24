@@ -10,6 +10,7 @@ export default class App extends Component {
         this.state = {
             // source: require('./src/assets/luck.mp4'),
             source: { uri: 'https://test-img.3dker.cn/ec046854dc7cce3bfce31efacc112d22' },
+            // source: { uri: 'https://test-img.3dker.cn/d7c2c75923f6d02e66aedbe8b179b5a2' },
             // source: { uri: 'https://test-img.3dker.cn/608a82b6b9ba9930cdfe8661b9a3a64f' }
         }
     }
