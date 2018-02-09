@@ -46,6 +46,9 @@ export default class VideoPlayer extends PureComponent {
         // 1. _onLoad -> _start -> _onProgress -> _onReadyForDisplay -> _onProgress -> _onEnd
         // 2. _start -> _onLoad -> _onProgress -> _onReadyForDisplay -> _onProgress -> _onEnd
     }
+    componentWillUnmount() {
+
+    }
     _hideHandlerWithTimer() {
         // 默认一秒之后隐藏掉控制区
         this.hideHandlerTimer && clearTimeout( this.hideHandlerTimer )
@@ -69,6 +72,7 @@ export default class VideoPlayer extends PureComponent {
         handled && this._hideHandlerWithTimer()
     }
     _onLoad = (evt) => {
+        console.log('_onLoad', evt)
         // 此回调会视频组件实例化后，第一个自己调用(视频加载到后)
         let duration = Math.round( evt.duration )
         // 视频加载完毕(但真正播放进行中是在onReadyForDisplay)，获得总的时间
@@ -119,7 +123,7 @@ export default class VideoPlayer extends PureComponent {
                 { handled &&
                     <View style={ SS.handleBar }>
                         <TouchableOpacity onPress={ this._playOrPause }>
-                            <Icon name={ paused ? 'pause' : 'play-arrow' } size={ CT.handleIconSize } color="#fff"/>
+                            <Icon name={ paused ? 'play-arrow' : 'pause' } size={ CT.handleIconSize } color="#fff"/>
                         </TouchableOpacity>
                         <Text style={[ SS.time ]}>{ currentTimer }</Text>
                         <Slider
