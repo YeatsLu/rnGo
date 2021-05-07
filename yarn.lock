@@ -66,18 +66,6 @@ ajv@^5.1.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
-align-text@^0.1.1, align-text@^0.1.3:
-  version "0.1.4"
-  resolved "https://repo.3dker.cn/repository/npm/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
-  dependencies:
-    kind-of "^3.0.2"
-    longest "^1.0.1"
-    repeat-string "^1.5.2"
-
-amdefine@>=0.0.4:
-  version "1.0.1"
-  resolved "https://repo.3dker.cn/repository/npm/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
-
 ansi-escapes@^3.0.0:
   version "3.0.0"
   resolved "https://repo.3dker.cn/repository/npm/ansi-escapes/-/ansi-escapes-3.0.0.tgz#ec3e8b4e9f8064fc02c3ac9b65f1c275bda8ef92"
@@ -210,10 +198,6 @@ astral-regex@^1.0.0:
   version "1.0.0"
   resolved "https://repo.3dker.cn/repository/npm/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
 
-async@^1.4.0:
-  version "1.5.2"
-  resolved "https://repo.3dker.cn/repository/npm/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
-
 async@^2.1.4, async@^2.4.0:
   version "2.6.0"
   resolved "https://repo.3dker.cn/repository/npm/async/-/async-2.6.0.tgz#61a29abb6fcc026fea77e56d1c6ec53a795951f4"
@@ -279,6 +263,19 @@ babel-generator@^6.18.0, babel-generator@^6.26.0:
     jsesc "^1.3.0"
     lodash "^4.17.4"
     source-map "^0.5.6"
+    trim-right "^1.0.1"
+
+babel-generator@^6.24.1:
+  version "6.26.1"
+  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.1.tgz#1844408d3b8f0d35a404ea7ac180f087a601bd90"
+  dependencies:
+    babel-messages "^6.23.0"
+    babel-runtime "^6.26.0"
+    babel-types "^6.26.0"
+    detect-indent "^4.0.0"
+    jsesc "^1.3.0"
+    lodash "^4.17.4"
+    source-map "^0.5.7"
     trim-right "^1.0.1"
 
 babel-helper-builder-binary-assignment-operator-visitor@^6.24.1:
@@ -977,10 +974,6 @@ callsites@^2.0.0:
   version "2.0.0"
   resolved "https://repo.3dker.cn/repository/npm/callsites/-/callsites-2.0.0.tgz#06eb84f00eea413da86affefacbffb36093b3c50"
 
-camelcase@^1.0.2:
-  version "1.2.1"
-  resolved "https://repo.3dker.cn/repository/npm/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
-
 camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://repo.3dker.cn/repository/npm/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
@@ -988,13 +981,6 @@ camelcase@^4.1.0:
 caseless@~0.12.0:
   version "0.12.0"
   resolved "https://repo.3dker.cn/repository/npm/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
-
-center-align@^0.1.1:
-  version "0.1.3"
-  resolved "https://repo.3dker.cn/repository/npm/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
-  dependencies:
-    align-text "^0.1.3"
-    lazy-cache "^1.0.3"
 
 chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
   version "1.1.3"
@@ -1031,14 +1017,6 @@ cli-cursor@^2.1.0:
 cli-width@^2.0.0:
   version "2.2.0"
   resolved "https://repo.3dker.cn/repository/npm/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
-
-cliui@^2.1.0:
-  version "2.1.0"
-  resolved "https://repo.3dker.cn/repository/npm/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
-  dependencies:
-    center-align "^0.1.1"
-    right-align "^0.1.1"
-    wordwrap "0.0.2"
 
 cliui@^3.2.0:
   version "3.2.0"
@@ -1308,7 +1286,7 @@ debug@~2.2.0:
   dependencies:
     ms "0.7.1"
 
-decamelize@^1.0.0, decamelize@^1.1.1:
+decamelize@^1.1.1:
   version "1.2.0"
   resolved "https://repo.3dker.cn/repository/npm/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
@@ -1414,6 +1392,12 @@ envinfo@^3.0.0:
     minimist "^1.2.0"
     os-name "^2.0.1"
     which "^1.2.14"
+
+errno@~0.1.7:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.8.tgz#8bb3e9c7d463be4976ff888f76b4809ebc2e811f"
+  dependencies:
+    prr "~1.0.1"
 
 error-ex@^1.2.0:
   version "1.3.1"
@@ -1864,14 +1848,15 @@ gulplog@^1.0.0:
     glogg "^1.0.0"
 
 handlebars@^4.0.3:
-  version "4.0.11"
-  resolved "https://repo.3dker.cn/repository/npm/handlebars/-/handlebars-4.0.11.tgz#630a35dfe0294bc281edae6ffc5d329fc7982dcc"
+  version "4.7.7"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.7.7.tgz#9ce33416aad02dbd6c8fafa8240d5d98004945a1"
   dependencies:
-    async "^1.4.0"
-    optimist "^0.6.1"
-    source-map "^0.4.4"
+    minimist "^1.2.5"
+    neo-async "^2.6.0"
+    source-map "^0.6.1"
+    wordwrap "^1.0.0"
   optionalDependencies:
-    uglify-js "^2.6"
+    uglify-js "^3.1.4"
 
 har-schema@^1.0.5:
   version "1.0.5"
@@ -2332,11 +2317,9 @@ jest-diff@^22.0.6:
     jest-get-type "^22.0.6"
     pretty-format "^22.0.6"
 
-jest-docblock@22.0.3, jest-docblock@^22.0.3:
-  version "22.0.3"
-  resolved "https://repo.3dker.cn/repository/npm/jest-docblock/-/jest-docblock-22.0.3.tgz#c33aa22682b9fc68a5373f5f82994428a2ded601"
-  dependencies:
-    detect-newline "^2.1.0"
+jest-docblock@^21, jest-docblock@^21.2.0:
+  version "21.2.0"
+  resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-21.2.0.tgz#51529c3b30d5fd159da60c27ceedc195faf8d414"
 
 jest-docblock@^22.0.6:
   version "22.0.6"
@@ -2363,16 +2346,16 @@ jest-get-type@^22.0.6:
   version "22.0.6"
   resolved "https://repo.3dker.cn/repository/npm/jest-get-type/-/jest-get-type-22.0.6.tgz#301fbc0760779fdbad37b6e3239a3c1811aa75cb"
 
-jest-haste-map@22.0.3:
-  version "22.0.3"
-  resolved "https://repo.3dker.cn/repository/npm/jest-haste-map/-/jest-haste-map-22.0.3.tgz#c9ecb5c871c5465d4bde4139e527fa0dc784aa2d"
+jest-haste-map@^21:
+  version "21.2.0"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-21.2.0.tgz#1363f0a8bb4338f24f001806571eff7a4b2ff3d8"
   dependencies:
     fb-watchman "^2.0.0"
     graceful-fs "^4.1.11"
-    jest-docblock "^22.0.3"
-    jest-worker "^22.0.3"
+    jest-docblock "^21.2.0"
     micromatch "^2.3.11"
     sane "^2.0.0"
+    worker-farm "^1.3.1"
 
 jest-haste-map@^22.0.6:
   version "22.0.6"
@@ -2516,13 +2499,7 @@ jest-validate@^22.0.6:
     leven "^2.1.0"
     pretty-format "^22.0.6"
 
-jest-worker@22.0.3:
-  version "22.0.3"
-  resolved "https://repo.3dker.cn/repository/npm/jest-worker/-/jest-worker-22.0.3.tgz#30433faca67814a8f80559f75ab2ceaa61332fd2"
-  dependencies:
-    merge-stream "^1.0.1"
-
-jest-worker@^22.0.3, jest-worker@^22.0.6:
+jest-worker@^22.0.6:
   version "22.0.6"
   resolved "https://repo.3dker.cn/repository/npm/jest-worker/-/jest-worker-22.0.6.tgz#1998ac7ab24a6eee4deddec76efe7742f2651504"
   dependencies:
@@ -2652,10 +2629,6 @@ klaw@^1.0.0:
   resolved "https://repo.3dker.cn/repository/npm/klaw/-/klaw-1.3.1.tgz#4088433b46b3b1ba259d78785d8e96f73ba02439"
   optionalDependencies:
     graceful-fs "^4.1.9"
-
-lazy-cache@^1.0.3:
-  version "1.0.4"
-  resolved "https://repo.3dker.cn/repository/npm/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
 
 lcid@^1.0.0:
   version "1.0.0"
@@ -2807,13 +2780,13 @@ lodash@^3.5.0:
   version "3.10.1"
   resolved "https://repo.3dker.cn/repository/npm/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
+lodash@^4.0.0:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+
 lodash@^4.13.1, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.6.1:
   version "4.17.4"
   resolved "https://repo.3dker.cn/repository/npm/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-
-longest@^1.0.1:
-  version "1.0.1"
-  resolved "https://repo.3dker.cn/repository/npm/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.3.1"
@@ -2871,24 +2844,14 @@ methods@~1.1.2:
   version "1.1.2"
   resolved "https://repo.3dker.cn/repository/npm/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
 
-metro-core@0.24.4, metro-core@^0.24.1:
-  version "0.24.4"
-  resolved "https://repo.3dker.cn/repository/npm/metro-core/-/metro-core-0.24.4.tgz#98fb7dd6abf8ea13af3e6f5a6080b7600e98d842"
-
-metro-source-map@0.24.4:
-  version "0.24.4"
-  resolved "https://repo.3dker.cn/repository/npm/metro-source-map/-/metro-source-map-0.24.4.tgz#b56c2ec94629d44c15304fd886d40d23ea970073"
-  dependencies:
-    source-map "^0.5.6"
-
-metro@^0.24.1:
-  version "0.24.4"
-  resolved "https://repo.3dker.cn/repository/npm/metro/-/metro-0.24.4.tgz#e67ed4a4992219992cd2d12792a0401b98e16f0c"
+metro-bundler@^0.20.0:
+  version "0.20.3"
+  resolved "https://registry.yarnpkg.com/metro-bundler/-/metro-bundler-0.20.3.tgz#0ded01b64e8963117017b106f75b83cfc34f3656"
   dependencies:
     absolute-path "^0.0.0"
     async "^2.4.0"
     babel-core "^6.24.1"
-    babel-generator "^6.26.0"
+    babel-generator "^6.24.1"
     babel-plugin-external-helpers "^6.18.0"
     babel-preset-es2015-node "^6.1.1"
     babel-preset-fbjs "^2.1.4"
@@ -2897,24 +2860,19 @@ metro@^0.24.1:
     babylon "^6.18.0"
     chalk "^1.1.1"
     concat-stream "^1.6.0"
-    connect "^2.8.3"
     core-js "^2.2.2"
     debug "^2.2.0"
     denodeify "^1.2.1"
     fbjs "^0.8.14"
-    fs-extra "^1.0.0"
     graceful-fs "^4.1.3"
     image-size "^0.6.0"
-    jest-docblock "22.0.3"
-    jest-haste-map "22.0.3"
-    jest-worker "22.0.3"
+    jest-docblock "^21"
+    jest-haste-map "^21"
     json-stable-stringify "^1.0.1"
     json5 "^0.4.0"
     left-pad "^1.1.3"
     lodash "^4.16.6"
     merge-stream "^1.0.1"
-    metro-core "0.24.4"
-    metro-source-map "0.24.4"
     mime-types "2.1.11"
     mkdirp "^0.5.1"
     request "^2.79.0"
@@ -2922,11 +2880,10 @@ metro@^0.24.1:
     source-map "^0.5.6"
     temp "0.8.3"
     throat "^4.1.0"
-    uglify-es "^3.1.9"
+    uglify-es "^3.1.8"
     wordwrap "^1.0.0"
     write-file-atomic "^1.2.0"
     xpipe "^1.0.5"
-    yargs "^9.0.0"
 
 micromatch@^2.1.5, micromatch@^2.3.11:
   version "2.3.11"
@@ -2994,9 +2951,9 @@ minimist@0.0.8, minimist@~0.0.1:
   version "0.0.8"
   resolved "https://repo.3dker.cn/repository/npm/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0:
-  version "1.2.0"
-  resolved "https://repo.3dker.cn/repository/npm/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
+minimist@^1.1.0, minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
 
 "mkdirp@>=0.5 0", mkdirp@^0.5.1:
   version "0.5.1"
@@ -3058,6 +3015,10 @@ negotiator@0.5.3:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://repo.3dker.cn/repository/npm/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+neo-async@^2.6.0:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
 
 node-fetch@^1.0.1, node-fetch@^1.3.3:
   version "1.7.3"
@@ -3435,6 +3396,10 @@ prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prr@~1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
+
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://repo.3dker.cn/repository/npm/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
@@ -3499,12 +3464,26 @@ react-deep-force-update@^1.0.0:
   version "1.1.1"
   resolved "https://repo.3dker.cn/repository/npm/react-deep-force-update/-/react-deep-force-update-1.1.1.tgz#bcd31478027b64b3339f108921ab520b4313dc2c"
 
-react-devtools-core@3.0.0:
-  version "3.0.0"
-  resolved "https://repo.3dker.cn/repository/npm/react-devtools-core/-/react-devtools-core-3.0.0.tgz#f683e19f0311108f97dbb5b29d948323a1bf7c03"
+react-devtools-core@^2.5.0:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-2.5.2.tgz#f97bec5afae5d9318d16778065e0c214c4d5714c"
   dependencies:
     shell-quote "^1.6.1"
     ws "^2.0.3"
+
+react-native-tab-view@0.0.74:
+  version "0.0.74"
+  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.74.tgz#62c0c882d9232b461ce181d440d683b4f99d1bd8"
+  dependencies:
+    prop-types "^15.6.0"
+
+react-native-vector-icons@^4.5.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-4.6.0.tgz#e4014311ffa6de397d914ffc31b7097a874cc8d5"
+  dependencies:
+    lodash "^4.0.0"
+    prop-types "^15.5.10"
+    yargs "^8.0.2"
 
 react-native-video@^2.0.0:
   version "2.0.0"
@@ -3513,9 +3492,9 @@ react-native-video@^2.0.0:
     keymirror "0.1.1"
     prop-types "^15.5.10"
 
-react-native@0.52.0:
-  version "0.52.0"
-  resolved "https://repo.3dker.cn/repository/npm/react-native/-/react-native-0.52.0.tgz#9784663a2aa40b30c87d4c9c06ef26cf8d419d91"
+react-native@0.51.0:
+  version "0.51.0"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.51.0.tgz#fe25934b3030fd323f3ca1a70f034133465955ed"
   dependencies:
     absolute-path "^0.0.0"
     art "^0.10.0"
@@ -3544,8 +3523,7 @@ react-native@0.52.0:
     graceful-fs "^4.1.3"
     inquirer "^3.0.6"
     lodash "^4.16.6"
-    metro "^0.24.1"
-    metro-core "^0.24.1"
+    metro-bundler "^0.20.0"
     mime "^1.3.4"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
@@ -3559,7 +3537,7 @@ react-native@0.52.0:
     promise "^7.1.1"
     prop-types "^15.5.8"
     react-clone-referenced-element "^1.0.1"
-    react-devtools-core "3.0.0"
+    react-devtools-core "^2.5.0"
     react-timer-mixin "^0.13.2"
     regenerator-runtime "^0.11.0"
     rimraf "^2.5.4"
@@ -3820,12 +3798,6 @@ restore-cursor@^2.0.0:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
 
-right-align@^0.1.1:
-  version "0.1.3"
-  resolved "https://repo.3dker.cn/repository/npm/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
-  dependencies:
-    align-text "^0.1.1"
-
 rimraf@2, rimraf@^2.5.1, rimraf@^2.5.4, rimraf@^2.6.1:
   version "2.6.2"
   resolved "https://repo.3dker.cn/repository/npm/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
@@ -4011,17 +3983,11 @@ source-map-support@^0.5.0:
   dependencies:
     source-map "^0.6.0"
 
-source-map@^0.4.4:
-  version "0.4.4"
-  resolved "https://repo.3dker.cn/repository/npm/source-map/-/source-map-0.4.4.tgz#eba4f5da9c0dc999de68032d8b4f76173652036b"
-  dependencies:
-    amdefine ">=0.0.4"
-
-source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.6:
+source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.6:
   version "0.5.7"
   resolved "https://repo.3dker.cn/repository/npm/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
-source-map@^0.6.0, source-map@~0.6.1:
+source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://repo.3dker.cn/repository/npm/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
@@ -4303,25 +4269,16 @@ ua-parser-js@^0.7.9:
   version "0.7.17"
   resolved "https://repo.3dker.cn/repository/npm/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
 
-uglify-es@^3.1.9:
-  version "3.3.6"
-  resolved "https://repo.3dker.cn/repository/npm/uglify-es/-/uglify-es-3.3.6.tgz#463c760057fadfe54c2d046de80152d96db048a3"
+uglify-es@^3.1.8:
+  version "3.3.9"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.3.9.tgz#0c1c4f0700bed8dbc124cdb304d2592ca203e677"
   dependencies:
     commander "~2.13.0"
     source-map "~0.6.1"
 
-uglify-js@^2.6:
-  version "2.8.29"
-  resolved "https://repo.3dker.cn/repository/npm/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
-  dependencies:
-    source-map "~0.5.1"
-    yargs "~3.10.0"
-  optionalDependencies:
-    uglify-to-browserify "~1.0.0"
-
-uglify-to-browserify@~1.0.0:
-  version "1.0.2"
-  resolved "https://repo.3dker.cn/repository/npm/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
+uglify-js@^3.1.4:
+  version "3.13.5"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.13.5.tgz#5d71d6dbba64cf441f32929b1efce7365bb4f113"
 
 uid-number@^0.0.6:
   version "0.0.6"
@@ -4466,21 +4423,19 @@ win-release@^1.0.0:
   dependencies:
     semver "^5.0.1"
 
-window-size@0.1.0:
-  version "0.1.0"
-  resolved "https://repo.3dker.cn/repository/npm/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
-
-wordwrap@0.0.2:
-  version "0.0.2"
-  resolved "https://repo.3dker.cn/repository/npm/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
-
 wordwrap@^1.0.0, wordwrap@~1.0.0:
   version "1.0.0"
-  resolved "https://repo.3dker.cn/repository/npm/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-1.0.0.tgz#27584810891456a4171c8d0226441ade90cbcaeb"
 
 wordwrap@~0.0.2:
   version "0.0.3"
   resolved "https://repo.3dker.cn/repository/npm/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+
+worker-farm@^1.3.1:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/worker-farm/-/worker-farm-1.7.0.tgz#26a94c5391bbca926152002f69b84a4bf772e5a8"
+  dependencies:
+    errno "~0.1.7"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"
@@ -4600,6 +4555,24 @@ yargs@^10.0.3:
     y18n "^3.2.1"
     yargs-parser "^8.1.0"
 
+yargs@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-8.0.2.tgz#6299a9055b1cefc969ff7e79c1d918dceb22c360"
+  dependencies:
+    camelcase "^4.1.0"
+    cliui "^3.2.0"
+    decamelize "^1.1.1"
+    get-caller-file "^1.0.1"
+    os-locale "^2.0.0"
+    read-pkg-up "^2.0.0"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^2.0.0"
+    which-module "^2.0.0"
+    y18n "^3.2.1"
+    yargs-parser "^7.0.0"
+
 yargs@^9.0.0:
   version "9.0.1"
   resolved "https://repo.3dker.cn/repository/npm/yargs/-/yargs-9.0.1.tgz#52acc23feecac34042078ee78c0c007f5085db4c"
@@ -4617,12 +4590,3 @@ yargs@^9.0.0:
     which-module "^2.0.0"
     y18n "^3.2.1"
     yargs-parser "^7.0.0"
-
-yargs@~3.10.0:
-  version "3.10.0"
-  resolved "https://repo.3dker.cn/repository/npm/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
-  dependencies:
-    camelcase "^1.0.2"
-    cliui "^2.1.0"
-    decamelize "^1.0.0"
-    window-size "0.1.0"
